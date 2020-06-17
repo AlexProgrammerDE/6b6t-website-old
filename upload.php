@@ -22,6 +22,7 @@
 	background-color: #ffffff;
 }
 </style>
+<script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
 </head>
 
 <body>

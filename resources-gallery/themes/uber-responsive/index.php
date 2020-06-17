@@ -18,7 +18,8 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  	<script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+	
     <?php file_exists('googleAnalytics.inc') ? include('googleAnalytics.inc') : false; ?>
 </head>
 
