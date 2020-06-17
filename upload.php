@@ -3,9 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>UploadiFive Test</title>
-<script src="jquery.min.js" type="text/javascript"></script>
-<script src="jquery.uploadifive.js" type="text/javascript"></script>
-<link rel="stylesheet" type="text/css" href="uploadifive.css">
+<script src="resources-uploadify/jquery.min.js" type="text/javascript"></script>
+<script src="resources-uploadify/jquery.uploadifive.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="resources-uploadify/uploadifive.css">
 <style type="text/css">
 body {
 	font: 13px Arial, Helvetica, Sans-serif;
@@ -38,14 +38,14 @@ body {
 		$(function() {
 			$('#file_upload').uploadifive({
 				'auto'             : false,
-				'checkScript'      : 'check-exists.php',
+				'checkScript'      : 'resources-uploadify/check-exists.php',
 				'fileType'         : 'image/png',
 				'formData'         : {
 									   'timestamp' : '<?php echo $timestamp;?>',
 									   'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
 				                     },
 				'queueID'          : 'queue',
-				'uploadScript'     : 'uploadifive.php',
+				'uploadScript'     : 'resources-uploadify/uploadifive.php',
 				'onUploadComplete' : function(file, data) { console.log(data); }
 			});
 		});
