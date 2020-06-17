@@ -2,10 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-    <title>UberGallery</title>
+    <title>6b6t - Gallery</title>
 
     <link rel="shortcut icon" href="<?php echo THEMEPATH; ?>/img/favicon.png" />
 
+    <link rel="stylesheet" type="text/css" href="/css/global.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo THEMEPATH; ?>/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo THEMEPATH; ?>/css/style.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo THEMEPATH; ?>/css/bootstrap-responsive.min.css" />
@@ -22,16 +23,19 @@
 </head>
 
 <body>
-
-    <div class="container">
-
-        <div class="navbar navbar-inverse">
-            <div class="navbar-inner">
-                <div class="container">
-                    <div class="brand">UberGallery</div>
-                </div>
-            </div>
+    <header class="header">
+        <div class="container">
+            <ul style="overflow: hidden; list-style-type: none; margin: 0; padding: 0;">
+				<li class="logo"><a href="index.html"><img src="img/logo.png" alt="logo" class="logo hvr-grow" height="64px" width="64px"></a></li>
+				<li class="navbutton">Online: <span data-playercounter-ip="6b6t.org">0</span> / 9000</li>
+				<a class="nav" href="upload.php"><li class="navbutton">Upload</li></a>
+				<a class="nav" href="gallery.php"><li class="navbutton">Gallery</li></a>
+				<a class="nav" href="index.html"><li class="navbutton">Home</li></a>
+            </ul>                     
         </div>
+    </header>
+	
+    <div class="container">
 
         <?php if($gallery->getSystemMessages()): ?>
             <?php foreach($gallery->getSystemMessages() as $message): ?>
