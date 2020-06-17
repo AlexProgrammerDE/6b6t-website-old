@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    color: black;
+    background-image:url('https://cdn.discordapp.com/attachments/699025897373827073/714543738118209566/2020-05-25_11.21.34.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background: #000000;
+}
+
+.header::after{
+    content: " ";
+    clear: both;
+    display: block;
+    visibility: none;
+}
+
+.logo{
+    float: left;
+}
+.navbar{
+    float: right;
+}
+
+.navbar ul{
+    color: #ffffff;
+    margin-bottom: 0px;
+}
+
+.navbar ul li{
+    color: #ffffff;
+    display: inline-block;
+}
+
+.navbar ul li a{
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    line-height: 60px;
+}
+
+.navbar ul li a:hover{
+    color: #3e99ef
+}
+
+p{
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+a:-webkit-any-link {
+    color: #ADD8E6;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+ul, ol{
+    color: #ffffff;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+img{
+    display: block;
+}
+
+.content{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 100%;
+}
+
+/*.sidebar{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 25%;
+    float: right;
+    width: 25%;
+}*/
+
+.sidebar div{
+    background: #000000;
+    padding: 30px;
+}
+
+.article{
+    background: #000000;
+    padding: 20px;
+}
+
+.clearfix::after{
+    content: " ";
+    clear: both;
+    display: block;
+    visibility: none;
+}
+
+.footer{
+    clear: both;
+    background: #000000;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.staff{
+    padding: 20px;
+    background: #ececec
+    
+}
+
+.staff img{
+    border-radius: 20%;
+    display: inline-block;
+}
+
+.staff b{
+    margin-left: 10px;
+    font-size: 20px;
+    padding: 16px;
+}
+
