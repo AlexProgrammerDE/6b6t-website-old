@@ -105,7 +105,8 @@ img{
 
 .article{
     background: #000000;
-    padding: 20px;
+    padding: 20px; 
+    opacity 0.6;
 }
 
 .clearfix::after{
