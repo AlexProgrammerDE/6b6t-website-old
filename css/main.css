@@ -5,7 +5,7 @@
 }
 body {
     color: black;
-    background-image:url('https://cdn.discordapp.com/attachments/699025897373827073/714543738118209566/2020-05-25_11.21.34.png');
+    background-image:url('../img/background.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
