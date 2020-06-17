@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo THEMEPATH; ?>/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo THEMEPATH; ?>/css/style.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo THEMEPATH; ?>/css/bootstrap-responsive.min.css" />
+	<link rel="stylesheet" type="text/css" href="/css/animate.css">
     <?php echo $gallery->getColorboxStyles(1); ?>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -36,6 +37,12 @@
         </div>
     </header>
 	
+		<div class="container clearfix"> 
+		<div class="content">
+			<section class="top-a animated slideInUp">
+            
+			</section>
+			<article class="article animated slideInUp">		
     <div class="container" style="margin-top: 20px;">
 
         <?php if($gallery->getSystemMessages()): ?>
@@ -106,7 +113,10 @@
         <p class="credit">Powered by, <a href="http://www.ubergallery.net">UberGallery</a></p>
 
     </div>
-
+			</article>
+		</div>
+	</div>
+	
 </body>
 
 <!-- Page template by, Chris Kankiewicz <http://www.chriskankiewicz.com> -->

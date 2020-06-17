@@ -4,6 +4,7 @@
 <link rel="stylesheet" type="text/css" href="css/global.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>6b6t - Upload</title>
+<link rel="stylesheet" type="text/css" href="css/animate.css">
 <script src="resources-uploadify/jquery.min.js" type="text/javascript"></script>
 <script src="resources-uploadify/jquery.uploadifive.js" type="text/javascript"></script>
 <link rel="stylesheet" type="text/css" href="resources-uploadify/uploadifive.css">
@@ -38,13 +39,22 @@
         </div>
     </header>
 
-	<h1>UploadiFive Demo</h1>
-	<form>
-		<div id="queue"></div>
-		<input id="file_upload" name="file_upload" type="file" multiple="true">
-		<a style="position: relative; top: 8px;" href="javascript:$('#file_upload').uploadifive('upload')">Upload Files</a>
-	</form>
-
+	<div class="container clearfix"> 
+		<div class="content">
+			<section class="top-a animated slideInUp">
+            
+			</section>
+			<article class="article animated slideInUp">			
+				<h1>UploadiFive Demo</h1>
+				<form>
+					<div id="queue"></div>
+					<input id="file_upload" name="file_upload" type="file" multiple="true">
+					<a style="position: relative; top: 8px;" href="javascript:$('#file_upload').uploadifive('upload')">Upload Files</a>
+				</form>
+			</article>
+		</div>
+	</div>
+	
 	<script type="text/javascript">
 		<?php $timestamp = time();?>
 		$(function() {
