@@ -1,7 +1,7 @@
 <?php
 
     // Include the UberGallery class
-    include('resources/UberGallery.php');
+    include('resources-gallery/UberGallery.php');
 
     // Initialize the UberGallery object
     $gallery = new UberGallery();
