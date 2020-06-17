@@ -6,20 +6,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <title>6b6t - Home</title>
-    <style>
-    a:link {
-      color: #3F47CC;
-    }
-	a:visited {
-      color: #3F47CC;
-    }
-	a:hover {
-      color: #01A2E8;
-    }
-    a:active {
-      color: #3F47CC;
-    }
-    </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://www.6b6t.org/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="css/hover-min.css">
@@ -29,8 +15,11 @@
     <header class="header">
         <div class="container">
             <ul style="overflow: hidden; list-style-type: none; margin: 0; padding: 0;">
-				<li><a href="index.html"><img src="img/logo.png" alt="logo" class="logo hvr-grow" height="64px" width="64px"></a></li>
-				<li style="float: right; text-align: center; text-decoration: none; display: block; padding: 25px 25px;" >Online: <span data-playercounter-ip="6b6t.org">0</span> / 9000</li>
+				<li class="logo"><a href="index.html"><img src="img/logo.png" alt="logo" class="logo hvr-grow" height="64px" width="64px"></a></li>
+				<li class="navbutton">Online: <span data-playercounter-ip="6b6t.org">0</span> / 9000</li>
+				<a class="nav" href="upload.php"><li class="navbutton">Upload</li></a>
+				<a class="nav" href="gallery.php"><li class="navbutton">Gallery</li></a>
+				<a class="nav" href="index.html"><li class="navbutton">Home</li></a>
             </ul>                     
         </div>
     </header>

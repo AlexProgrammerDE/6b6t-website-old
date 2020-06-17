@@ -3,8 +3,9 @@
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
+
 body {
-    color: black;
+    color: #333333;
     background-image:url('../img/background.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -13,6 +14,54 @@ body {
 
 html {
   height: 100%;
+}
+
+.logo{
+    float: left;
+}
+
+.navbutton {
+	float: right; 
+	text-align: center; 
+	text-decoration: none; 
+	display: block; 
+	padding: 25px 25px;
+}
+
+a.nav:link {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+a.nav:visited {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+a.nav:hover {
+	text-decoration: none;
+	color: #bfbfbf;
+}
+
+a.nav:active {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+a:link {
+	color: #3F47CC;
+}
+
+a:visited {
+	color: #3F47CC;
+}
+
+a:hover {
+	color: #01A2E8;
+}
+
+a:active {
+	color: #3F47CC;
 }
 
 .container{
@@ -31,33 +80,7 @@ html {
     visibility: none;
 }
 
-.logo{
-    float: left;
-}
-.navbar{
-    float: right;
-}
 
-.navbar ul{
-    color: #ffffff;
-    margin-bottom: 0px;
-}
-
-.navbar ul li{
-    color: #ffffff;
-    display: inline-block;
-}
-
-.navbar ul li a{
-    color: #ffffff;
-    padding: 10px 20px;
-    text-decoration: none;
-    line-height: 60px;
-}
-
-.navbar ul li a:hover{
-    color: #3e99ef
-}
 
 p{
     color: #ffffff;
@@ -68,13 +91,22 @@ h1, h2, h3, h4, h5, h6{
     color: #ffffff;
     margin-bottom: 10px;
 }
+
 a:-webkit-any-link {
     color: #ADD8E6;
     cursor: pointer;
     text-decoration: underline;
 }
 
-ul, ol{
+ul{
+	overflow: hidden; 
+	list-style-type: none;
+	margin: 0; 
+	padding: 0;
+    color: #ffffff;
+}
+
+ol{
     color: #ffffff;
     margin-left: 20px;
     margin-bottom: 20px;
@@ -88,19 +120,6 @@ img{
     margin-top: 30px;
     margin-bottom: 30px;
     max-width: 100%;
-}
-
-/*.sidebar{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    max-width: 25%;
-    float: right;
-    width: 25%;
-}*/
-
-.sidebar div{
-    background: #000000;
-    padding: 30px;
 }
 
 .article{
@@ -126,21 +145,3 @@ img{
     bottom: 0;
     left: 0;
 }
-
-.staff{
-    padding: 20px;
-    background: #ececec
-    
-}
-
-.staff img{
-    border-radius: 20%;
-    display: inline-block;
-}
-
-.staff b{
-    margin-left: 10px;
-    font-size: 20px;
-    padding: 16px;
-}
-
