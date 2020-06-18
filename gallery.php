@@ -1,5 +1,5 @@
 <?php
-
+    if ($_COOKIE["accepted"] == true) {
     // Include the UberGallery class
     include('resources-gallery/UberGallery.php');
 
@@ -22,4 +22,10 @@
         include($themeIndex);
     } else {
         die('ERROR: Failed to initialize theme');
+    }
+    } else {
+        if ($stream = fopen('/accept.html', 'r')) {
+            echo stream_get_contents($stream);
+            fclose($stream);
+        }
     }
