@@ -46,7 +46,7 @@ Released under the UploadiFive Standard License <http://www.uploadify.com/upload
                     'fileObjName'     : 'Filedata',         // The name of the file object to use in your server-side script
                     'fileSizeLimit'   : 0,                  // Maximum allowed size of files to upload
                     'fileType'        : false,              // Type of files allowed (image, etc), separate with a pipe character |
-                    'formData'        : {image},                 // Additional data to send to the upload script
+                    'formData'        : {},                 // Additional data to send to the upload script
                     'height'          : 30,                 // The height of the button
                     'itemTemplate'    : false,              // The HTML markup for the item in the queue
                     'method'          : 'post',             // The method to use when submitting the upload
