@@ -37,7 +37,7 @@ Released under the UploadiFive Standard License <http://www.uploadify.com/upload
 
                 // Set the default options
                 var settings = $data.settings = $.extend({
-                    'auto'            : true,               // Automatically upload a file when it's added to the queue
+                    'auto'            : false,               // Automatically upload a file when it's added to the queue
                     'buttonClass'     : false,              // A class to add to the UploadiFive button
                     'buttonText'      : 'Select Files',     // The text that appears on the UploadiFive button
                     'checkScript'     : false,              // Path to the script that checks for existing file names 
@@ -50,14 +50,14 @@ Released under the UploadiFive Standard License <http://www.uploadify.com/upload
                     'height'          : 30,                 // The height of the button
                     'itemTemplate'    : false,              // The HTML markup for the item in the queue
                     'method'          : 'post',             // The method to use when submitting the upload
-                    'multi'           : true,               // Set to true to allow multiple file selections
+                    'multi'           : false,               // Set to true to allow multiple file selections
                     'overrideEvents'  : [],                 // An array of events to override
                     'queueID'         : false,              // The ID of the file queue
                     'queueSizeLimit'  : 0,                  // The maximum number of files that can be in the queue
                     'removeCompleted' : false,              // Set to true to remove files that have completed uploading
                     'simUploadLimit'  : 0,                  // The maximum number of files to upload at once
                     'truncateLength'  : 0,                  // The length to truncate the file names to
-                    'uploadLimit'     : 0,                  // The maximum number of files you can upload
+                    'uploadLimit'     : 1,                  // The maximum number of files you can upload
                     'uploadScript'    : 'uploadifive.php',  // The path to the upload script
                     'width'           : 100                 // The width of the button
 
