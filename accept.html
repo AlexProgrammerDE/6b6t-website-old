@@ -29,10 +29,32 @@
             <section class="top-a animated slideInUp">
             
             </section>
-            <article class="article animated slideInUp">
-                <img src="img/logo.png" height="64px" width="64px">
+            <article style="text-align: center; display: block; margin-left: auto; margin-right: auto; width: 50%;" class="article animated slideInUp">
+			    <ul style="list-style-type: none;">
+                <li><img style="display: block; margin-left: auto; margin-right: auto;" src="img/attention.png" height="64px" width="64px"></li>
+				<li>Warning!!! This gallery may contain images which are NOT suitable for people who are not older than 18! </li>
+				<li>ONLY CLICK THE BUTTON BELOW WHEN YOU ARE OLDER THAN 18 YEARS!!!</li>
+				<li><input id="Confirm" type="button" value="Confirm" onclick="confirm();" style="
+                background-color: red;
+                border: none;
+                color: black;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				" /></li>
+				</ul>
             </article>
         </div>
     </div>
+	
+	<script>
+	  function confirm() {
+        document.cookie = "galleryaccepted=true";
+		
+		location.reload()
+	  }
+	</script>
 </body>
 </html>

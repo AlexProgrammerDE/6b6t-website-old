@@ -9,11 +9,8 @@
 <script src="resources-uploadify/jquery.uploadifive.js" type="text/javascript"></script>
 <link rel="stylesheet" type="text/css" href="resources-uploadify/uploadifive.css">
 <style type="text/css">
-.uploadifive-button {
-	float: left;
-	margin-right: 10px;
-}
 #queue {
+	color: black;
 	border: 1px solid #E5E5E5;
 	height: 177px;
 	overflow: auto;
@@ -44,12 +41,14 @@
 			<section class="top-a animated slideInUp">
             
 			</section>
-			<article class="article animated slideInUp">			
-				<h1>UploadiFive Demo</h1>
-				<form>
-					<div id="queue"></div>
-					<input id="file_upload" name="file_upload" type="file" multiple="true">
-					<a style="position: relative; top: 8px;" href="javascript:$('#file_upload').uploadifive('upload')">Upload Files</a>
+			<article style="text-align: center; display: block; margin-left: auto; margin-right: auto; width: 30%;" class="article animated slideInUp">		
+				<h1>Upload Images to the gallery</h1>
+				<form style="text-align: center; display: block; margin-left: auto; margin-right: auto;">
+				    <ul style="list-style-type: none;">		
+						<li><div style="text-align: center; display: block; margin-left: auto; margin-right: auto;" id="queue"></div></li>
+						<li><input style="text-align: center; display: block; margin-left: auto; margin-right: auto;" id="file_upload" name="file_upload" type="file" multiple="false"></li>
+						<li><a style="position: relative; top: 8px;" href="javascript:$('#file_upload').uploadifive('upload')">Upload Files</a></li>
+					</ul>
 				</form>
 			</article>
 		</div>
