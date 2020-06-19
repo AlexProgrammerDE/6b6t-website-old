@@ -31,7 +31,7 @@
     <?php file_exists('googleAnalytics.inc') ? include('googleAnalytics.inc') : false; ?>
 </head>
 
-<body>
+<body style="background-color: black;">
     <header class="header">
         <div class="container">
             <ul style="overflow: hidden; list-style-type: none; margin: 0; padding: 0;">
@@ -54,7 +54,7 @@
 				<h1 style="color:white;" class="article animated slideInUp">This page needs JavaScript activated to work. (We dont use any trackers)</h1>
 			</noscript>
 			
-			<article class="article animated slideInUp">		
+			<article style="opacity: 1;" class="article animated slideInUp">		
 				<div class="container" style="margin-top: 20px;">
 
         <?php if($gallery->getSystemMessages()): ?>
