@@ -14,19 +14,28 @@
 	<script src="resources-uploadify/jquery.min.js" type="text/javascript"></script>
 	<script src="resources-uploadify/jquery.uploadifive.js" type="text/javascript"></script>
 	<link rel="stylesheet" type="text/css" href="resources-uploadify/uploadifive.css">
-<style type="text/css">
-#queue {
-	color: black;
-	border: 1px solid #E5E5E5;
-	height: 177px;
-	overflow: auto;
-	margin-bottom: 10px;
-	padding: 0 3px 3px;
-	width: 300px;
-	background-color: #ffffff;
-}
-</style>
-<script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+	<style type="text/css">
+		#queue {
+			color: black;
+			border: 1px solid #E5E5E5;
+			height: 177px;
+			overflow: auto;
+			margin-bottom: 10px;
+			padding: 0 3px 3px;
+			width: 300px;
+			background-color: #ffffff;
+		}
+	</style>
+	<script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+		new Crate({
+			server: '721107715048472607',
+			channel: '721107715358720008',
+			color: '#000',
+			location: ['bottom', 'right']
+		})
+		crate.notify('Click me to chat on the 6b6t discord server!')
+	</script>
 </head>
 
 <body>

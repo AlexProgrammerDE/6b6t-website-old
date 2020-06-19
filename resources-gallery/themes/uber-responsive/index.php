@@ -29,6 +29,16 @@
   	<script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
 	
     <?php file_exists('googleAnalytics.inc') ? include('googleAnalytics.inc') : false; ?>
+	
+	<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+		new Crate({
+			server: '721107715048472607',
+			channel: '721107715358720008',
+			color: '#000',
+			location: ['bottom', 'right']
+		})
+		crate.notify('Click me to chat on the 6b6t discord server!')
+	</script>
 </head>
 
 <body style="background-color: black;">
