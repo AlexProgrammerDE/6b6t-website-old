@@ -1,13 +1,19 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="css/global.css">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>6b6t - Upload</title>
-<link rel="stylesheet" type="text/css" href="css/animate.css">
-<script src="resources-uploadify/jquery.min.js" type="text/javascript"></script>
-<script src="resources-uploadify/jquery.uploadifive.js" type="text/javascript"></script>
-<link rel="stylesheet" type="text/css" href="resources-uploadify/uploadifive.css">
+	<noscript>
+		<style>
+			article { display:none; }
+			.online { display:none; }
+		</style>
+	</noscript>
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>6b6t - Upload</title>
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<script src="resources-uploadify/jquery.min.js" type="text/javascript"></script>
+	<script src="resources-uploadify/jquery.uploadifive.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="resources-uploadify/uploadifive.css">
 <style type="text/css">
 #queue {
 	color: black;
@@ -28,7 +34,7 @@
         <div class="container">
             <ul style="overflow: hidden; list-style-type: none; margin: 0; padding: 0;">
 				<li class="logo"><a href="index.html"><img src="img/logo.png" alt="logo" class="logo hvr-grow" height="64px" width="64px"></a></li>
-				<li class="navbutton">Online: <span data-playercounter-ip="6b6t.org">0</span> / 9000</li>
+				<li class="navbutton"><span class="online">Online: <span data-playercounter-ip="6b6t.org">0</span> / 9000</span></li>
 				<a class="nav" href="upload.php"><li class="navbutton">Upload</li></a>
 				<a class="nav" href="gallery.php"><li class="navbutton">Gallery</li></a>
 				<a class="nav" href="index.html"><li class="navbutton">Home</li></a>
@@ -41,7 +47,12 @@
 			<section class="top-a animated slideInUp">
             
 			</section>
-			<article style="text-align: center; display: block; margin-left: auto; margin-right: auto; width: 30%;" class="article animated slideInUp">		
+			
+			<noscript>
+				<h1 class="article animated slideInUp">This page needs JavaScript activated to work. (We dont use any trackers)</h1>
+			</noscript>
+			
+			<article style="text-align: center; margin-left: auto; margin-right: auto; width: 30%;" class="article animated slideInUp">		
 				<h1>Upload Images to the gallery</h1>
 				<form style="text-align: center; display: block; margin-left: auto; margin-right: auto;">
 				    <ul style="list-style-type: none;">		
@@ -51,6 +62,7 @@
 					</ul>
 				</form>
 			</article>
+			
 		</div>
 	</div>
 	

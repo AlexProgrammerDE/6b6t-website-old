@@ -2,6 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
+	<noscript>
+		<style>
+			article { display:none; }
+			.online { display:none; }
+		</style>
+	</noscript>
+	
     <title>6b6t - Gallery</title>
 
     <link rel="shortcut icon" href="<?php echo THEMEPATH; ?>/img/favicon.png" />
@@ -29,7 +36,7 @@
         <div class="container">
             <ul style="overflow: hidden; list-style-type: none; margin: 0; padding: 0;">
 				<li class="logo"><a href="index.html"><img src="img/logo.png" alt="logo" class="logo hvr-grow" height="64px" width="64px"></a></li>
-				<li class="navbutton">Online: <span data-playercounter-ip="6b6t.org">0</span> / 9000</li>
+				<li class="navbutton"><span class="online">Online: <span data-playercounter-ip="6b6t.org">0</span> / 9000</span></li>
 				<a class="nav" href="upload.php"><li class="navbutton">Upload</li></a>
 				<a class="nav" href="gallery.php"><li class="navbutton">Gallery</li></a>
 				<a class="nav" href="index.html"><li class="navbutton">Home</li></a>
@@ -37,13 +44,18 @@
         </div>
     </header>
 	
-		<div class="container clearfix"> 
+	<div class="container clearfix"> 
 		<div class="content">
 			<section class="top-a animated slideInUp">
             
 			</section>
+			
+			<noscript>
+				<h1 style="color:white;" class="article animated slideInUp">This page needs JavaScript activated to work. (We dont use any trackers)</h1>
+			</noscript>
+			
 			<article class="article animated slideInUp">		
-    <div class="container" style="margin-top: 20px;">
+				<div class="container" style="margin-top: 20px;">
 
         <?php if($gallery->getSystemMessages()): ?>
             <?php foreach($gallery->getSystemMessages() as $message): ?>
@@ -109,10 +121,7 @@
                 </ul>
             </div>
         <?php endif; ?>
-
-        <p class="credit">Powered by, <a href="http://www.ubergallery.net">UberGallery</a></p>
-
-    </div>
+				</div>
 			</article>
 		</div>
 	</div>
