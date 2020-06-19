@@ -54,8 +54,8 @@
 				<h1 style="color:white;" class="article animated slideInUp">This page needs JavaScript activated to work. (We dont use any trackers)</h1>
 			</noscript>
 			
-			<article style="opacity: 1;" class="article animated slideInUp">		
-				<div class="container" style="margin-top: 20px;">
+			<article style="opacity: 1; width: 100%;" class="article animated slideInUp">		
+				<div class="container" style="margin-top: 20px; margin-left: auto; margin-right: auto;">
 
         <?php if($gallery->getSystemMessages()): ?>
             <?php foreach($gallery->getSystemMessages() as $message): ?>
