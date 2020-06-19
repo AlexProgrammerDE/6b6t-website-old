@@ -16,22 +16,10 @@ Copyright (c) 2012 Reactive Apps, Ronnie Garcia
 	padding: 15px 32px;
 	text-decoration: none;
 	display: inline-block;
+	transition-duration: 0.4s;
 }
 .uploadifive-button:hover {
 	background-color: #606060;
-	background-image: linear-gradient(top, #606060 0%, #808080 100%);
-	background-image: -o-linear-gradient(top, #606060 0%, #808080 100%);
-	background-image: -moz-linear-gradient(top, #606060 0%, #808080 100%);
-	background-image: -webkit-linear-gradient(top, #606060 0%, #808080 100%);
-	background-image: -ms-linear-gradient(top, #606060 0%, #808080 100%);
-	background-image: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(0, #606060),
-		color-stop(1, #808080)
-	);
-	background-position: center bottom;
 }
 .uploadifive-queue-item {
 	background-color: #F5F5F5;
