@@ -50,7 +50,7 @@ Released under the UploadiFive Standard License <http://www.uploadify.com/upload
                     'height'          : 30,                 // The height of the button
                     'itemTemplate'    : false,              // The HTML markup for the item in the queue
                     'method'          : 'post',             // The method to use when submitting the upload
-                    'multi'           : true,               // Set to true to allow multiple file selections
+                    'multi'           : false,               // Set to true to allow multiple file selections
                     'overrideEvents'  : [],                 // An array of events to override
                     'queueID'         : false,              // The ID of the file queue
                     'queueSizeLimit'  : 0,                  // The maximum number of files that can be in the queue
@@ -354,10 +354,10 @@ Released under the UploadiFive Standard License <http://www.uploadify.com/upload
                             file.exists = parseInt(fileExists);
                         });
                         if (file.exists) {
-                            alert('A file named ' + file.name + ' already exists in the gallery.')
-                                // If not replacing the file, cancel the upload
-                                methods.cancel.call($this, file);
-                                return true;
+                            alert('A file named ' + file.name + ' already exists in the gallery. Please rename it and try again.')
+                            // If not replacing the file, cancel the upload
+                            methods.cancel.call($this, file);
+                            return true;
                         }
                     }
                     // Trigger the check event
