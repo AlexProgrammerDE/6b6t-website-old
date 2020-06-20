@@ -9,8 +9,7 @@ body {
     color: #333333;
     background-image:url('../img/background.png');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    min-height: 100%;
+    background-size: cover;
 }
 
 .navul {
