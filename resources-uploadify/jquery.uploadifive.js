@@ -44,7 +44,7 @@ Released under the UploadiFive Standard License <http://www.uploadify.com/upload
                     'dnd'             : true,               // Allow drag and drop into the queue
                     'dropTarget'      : false,              // Selector for the drop target
                     'fileObjName'     : 'Filedata',         // The name of the file object to use in your server-side script
-                    'fileSizeLimit'   : 0,                  // Maximum allowed size of files to upload
+                    'fileSizeLimit'   : 3000,                  // Maximum allowed size of files to upload
                     'fileType'        : false,              // Type of files allowed (image, etc), separate with a pipe character |
                     'formData'        : {},                 // Additional data to send to the upload script
                     'height'          : 30,                 // The height of the button
@@ -354,11 +354,10 @@ Released under the UploadiFive Standard License <http://www.uploadify.com/upload
                             file.exists = parseInt(fileExists);
                         });
                         if (file.exists) {
-                            if (!confirm('A file named ' + file.name + ' already exists in the upload folder.\nWould you like to replace it?')) {
+                            alert('A file named ' + file.name + ' already exists in the gallery.')
                                 // If not replacing the file, cancel the upload
                                 methods.cancel.call($this, file);
                                 return true;
-                            }
                         }
                     }
                     // Trigger the check event
