@@ -1,5 +1,5 @@
 # 6b6t-website
-The whole page from 6b6t. Here we develop new features.
+The old website of 6b6t.org.
 
 Projects used for the gallery:
 * UberGallery: https://github.com/UberGallery/UberGallery
