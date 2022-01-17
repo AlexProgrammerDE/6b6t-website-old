@@ -8,8 +8,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "ajax": "^0.0.4",
-    "axios": "^0.24.0",
+    "ajax": "0.0.4",
+    "axios": "0.24.0",
     "next": "12.0.8",
     "react": "17.0.2",
     "react-dom": "17.0.2"
@@ -17,11 +17,11 @@
   "devDependencies": {
     "@types/node": "17.0.9",
     "@types/react": "17.0.38",
-    "autoprefixer": "^10.4.2",
+    "autoprefixer": "10.4.2",
     "eslint": "8.7.0",
     "eslint-config-next": "12.0.8",
-    "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.15",
+    "postcss": "8.4.5",
+    "tailwindcss": "3.0.15",
     "typescript": "4.5.4"
   }
 }
