@@ -4,6 +4,8 @@ import Link from 'next/link'
 import {getOnlinePlayers} from "../lib/playercount";
 import {useInterval} from "../lib/utils";
 import {useEffect, useState} from "react";
+import Image from 'next/image';
+import logo from '../public/logo.png'
 
 const Home: NextPage = () => {
     const [onlineText, setOnlineText] = useState<string>();
@@ -46,7 +48,7 @@ const Home: NextPage = () => {
                         <li className="logo">
                             <Link href="/">
                                 <a>
-                                    <img src="logo.png" alt="logo" height="64px" width="64px"/>
+                                    <Image src={logo} alt="logo" height={64} width={64}/>
                                 </a>
                             </Link>
                         </li>
@@ -87,7 +89,7 @@ const Home: NextPage = () => {
                         <p>
                             Join the 6b6t.org Official Discord Server to keep up with the latest updates with the
                             server:
-                            <a href="https://dsc.gg/6b6t.org" target="_blank">https://dsc.gg/6b6t.org</a>
+                            <a href="https://dsc.gg/6b6t.org" target="_blank" rel="noreferrer">https://dsc.gg/6b6t.org</a>
                         </p>
                     </article>
                 </div>
@@ -96,4 +98,5 @@ const Home: NextPage = () => {
     )
 }
 
+// noinspection JSUnusedGlobalSymbols
 export default Home
