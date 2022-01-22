@@ -6,6 +6,7 @@ import {useInterval} from "../lib/utils";
 import {useEffect, useState} from "react";
 import Image from 'next/image';
 import logo from '../public/logo.png'
+import Script from 'next/script';
 
 const Home: NextPage = () => {
     const [onlineText, setOnlineText] = useState<string>();
@@ -31,6 +32,7 @@ const Home: NextPage = () => {
 
                 <link rel="icon" href="/favicon.ico"/>
 
+                <title>6b6t</title>
                 <meta name="keywords" content="6b6t, minecraft, cracked, anarchy, server, 6builders6tools"/>
                 <meta name="author" content="AlexProgrammerDE"/>
                 <meta name="description" content={seoDescription} />
@@ -51,13 +53,11 @@ const Home: NextPage = () => {
                 <meta name="twitter:image:alt" content="6b6t logo" />
 
                 <meta name="format-detection" content="telephone=no" />
-
-                <title>6b6t</title>
-
-                <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3"
-                        async defer
-                >
-                    {`
+            </Head>
+            <Script id="crate" src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3"
+                    strategy="lazyOnload"
+            >
+                {`
                     const crate = new Crate({
                                 server: '917520262797344779',
                                 channel: '917520263384563717',
@@ -66,8 +66,7 @@ const Home: NextPage = () => {
                             })
                     crate.notify('Click me to chat on the 6b6t discord server!')
                     `}
-                </script>
-            </Head>
+            </Script>
             <header className="header text-white">
                 <div className="container">
                     <ul>
