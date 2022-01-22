@@ -18,8 +18,8 @@ const Home: NextPage = () => {
         getOnlinePlayers().then(data => setOnlineText(data));
     }, 10000);
 
-    const seoTitle = '6b6t';
-    const seoDescription = '6b6t is a Minecraft server with a friendly community. Join us!';
+    const seoTitle = '6builders 6tools';
+    const seoDescription = '6b6t.org is a Minecraft cracked anarchy server with /tpa and /home. IP: 6b6t.org';
     const seoImage = 'https://6b6t.org/logo.png';
     const seoUrl = 'https://6b6t.org';
 
