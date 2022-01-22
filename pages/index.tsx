@@ -31,18 +31,21 @@ const Home: NextPage = () => {
 
                 <title>6b6t</title>
 
-                {/*
-                <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
-                    new Crate({
-                    server: '917520262797344779',
-                    channel: '917520263384563717',
-                    color: '#000',
-                    location: ['bottom', 'right']
-                })
+                <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3"
+                        async defer
+                >
+                    {`
+                    const crate = new Crate({
+                                server: '917520262797344779',
+                                channel: '917520263384563717',
+                                color: '#000',
+                                location: ['bottom', 'right']
+                            })
                     crate.notify('Click me to chat on the 6b6t discord server!')
-                </script>*/}
+                    `}
+                </script>
             </Head>
-            <header className="header">
+            <header className="header text-white">
                 <div className="container">
                     <ul>
                         <li className="logo">
@@ -88,8 +91,8 @@ const Home: NextPage = () => {
                         <h1>Discord:</h1>
                         <p>
                             Join the 6b6t.org Official Discord Server to keep up with the latest updates with the
-                            server:
-                            <a href="https://dsc.gg/6b6t.org" target="_blank" rel="noreferrer">https://dsc.gg/6b6t.org</a>
+                            server: <a href="https://dsc.gg/6b6t.org" target="_blank"
+                                       rel="noreferrer">https://dsc.gg/6b6t.org</a>
                         </p>
                     </article>
                 </div>

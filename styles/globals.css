@@ -90,7 +90,7 @@ a:active {
 }
 
 .header::after {
-  @apply invisible
+  @apply invisible;
   content: " ";
   clear: both;
   display: block;
