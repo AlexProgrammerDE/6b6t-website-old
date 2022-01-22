@@ -18,16 +18,39 @@ const Home: NextPage = () => {
         getOnlinePlayers().then(data => setOnlineText(data));
     }, 10000);
 
+    const seoTitle = '6b6t';
+    const seoDescription = '6b6t is a Minecraft server with a friendly community. Join us!';
+    const seoImage = 'https://6b6t.org/logo.png';
+    const seoUrl = 'https://6b6t.org';
+
     return (
         <>
             <Head>
+                <meta charSet="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+
                 <link rel="icon" href="/favicon.ico"/>
 
-                <meta name="description" content="6b6t - Home"/>
-                <meta name="keywords" content="6b6t Official website"/>
-                <meta name="author" content="Nate Legault and Pistonmaster"/>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-                <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
+                <meta name="keywords" content="6b6t, minecraft, cracked, anarchy, server, 6builders6tools"/>
+                <meta name="author" content="AlexProgrammerDE"/>
+                <meta name="description" content={seoDescription} />
+
+                <meta name="og:type" content="website" />
+                <meta name="og:url" content={seoUrl} />
+                <meta name="og:title" content={seoTitle} />
+                <meta name="og:url" content={seoUrl} />
+                <meta name="og:description" content={seoDescription} />
+                <meta name="og:image" content={seoImage} />
+
+                <meta name="theme-color" content={"#3D45CD"} />
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:url" content={seoUrl} />
+                <meta name="twitter:title" content={seoTitle} />
+                <meta name="twitter:description" content={seoDescription} />
+                <meta name="twitter:image" content={seoImage} />
+                <meta name="twitter:image:alt" content="6b6t logo" />
+
+                <meta name="format-detection" content="telephone=no" />
 
                 <title>6b6t</title>
 
@@ -82,8 +105,7 @@ const Home: NextPage = () => {
                             <li>STORAGE: 2x2TB NVMe SSD Gen 4.0</li>
                             <li>DDOS Protection: Path.net</li>
                             <li>6b6t is a non-vanilla cracked anarchy server with no rules which means everything is
-                                allowed and you
-                                cannot get punished (No bans or mutes or kicks).
+                                allowed and you can not get punished (No bans or mutes or kicks).
                             </li>
                         </ul>
                         <br/>
