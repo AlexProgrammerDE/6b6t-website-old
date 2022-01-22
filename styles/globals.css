@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 * {
+  @apply overflow-hidden;
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
-  overflow: none;
 }
 
 body {
@@ -90,10 +90,10 @@ a:active {
 }
 
 .header::after {
+  @apply invisible
   content: " ";
   clear: both;
   display: block;
-  visibility: none;
   font-weight: bold;
 }
 
@@ -141,10 +141,10 @@ img {
 }
 
 .clearfix::after {
+  @apply invisible;
   content: " ";
   clear: both;
   display: block;
-  visibility: none;
 }
 
 .footer {
