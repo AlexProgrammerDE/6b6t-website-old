@@ -69,7 +69,7 @@ const Home: NextPage = () => {
             </Script>
             <header className="header text-white">
                 <div className="container">
-                    <ul>
+                    <ul className="nav-ul">
                         <li className="logo">
                             <Link href="/">
                                 <a>
@@ -77,10 +77,10 @@ const Home: NextPage = () => {
                                 </a>
                             </Link>
                         </li>
-                        <li className="navbutton">
+                        <li className="nav-button">
                             <span className="online">Online: {onlineText}</span>
                         </li>
-                        <li className="navbutton">
+                        <li className="nav-button">
                             <Link href="/">
                                 <a className="nav">
                                     Home

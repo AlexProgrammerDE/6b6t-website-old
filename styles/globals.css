@@ -3,63 +3,50 @@
 @tailwind utilities;
 
 * {
-  @apply overflow-hidden;
-  margin: 0;
-  padding: 0;
+  @apply overflow-hidden m-0 p-0;
   font-family: 'Open Sans', sans-serif;
 }
 
 body {
-  color: #333333;
+  color: #ffffff;
   background-image: url('/background.png');
   background-repeat: repeat;
   background-size: cover;
 }
 
-.navul {
-  overflow: hidden;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  color: #ffffff;
+.nav-ul {
+  @apply overflow-hidden list-none m-0 p-0;
 }
 
 html {
-  height: 100%;
+  @apply min-h-screen;
 }
 
 .logo {
-  float: left;
-  text-align: center;
-  text-decoration: none;
-  display: block;
+  @apply float-left text-center block p-0;
 }
 
-.navbutton {
-  float: right;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  padding: 22px 22px;
+.nav-button {
+  @apply float-right text-center block p-5;
 }
 
 a.nav:link {
-  text-decoration: none;
+  @apply no-underline;
   color: #ffffff;
 }
 
 a.nav:visited {
-  text-decoration: none;
+  @apply no-underline;
   color: #ffffff;
 }
 
 a.nav:hover {
-  text-decoration: none;
+  @apply no-underline;
   color: #bfbfbf;
 }
 
 a.nav:active {
-  text-decoration: none;
+  @apply no-underline;
   color: #ffffff;
 }
 
@@ -85,8 +72,7 @@ a:active {
 }
 
 .header {
-  background: #000000;
-  font-weight: bold;
+  @apply bg-black font-bold;
 }
 
 .header::after {
@@ -98,12 +84,10 @@ a:active {
 }
 
 p {
-  color: #ffffff;
   margin-bottom: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #ffffff;
   margin-bottom: 10px;
 }
 
@@ -115,17 +99,11 @@ a:-webkit-any-link {
 
 ul {
   list-style-type: circle;
-  color: #ffffff;
   list-style-position: inside;
 }
 
 ol {
-  color: #ffffff;
   list-style-position: inside;
-}
-
-img {
-  display: block;
 }
 
 .content {
@@ -141,19 +119,7 @@ img {
 }
 
 .clearfix::after {
-  @apply invisible;
+  @apply invisible block;
   content: " ";
   clear: both;
-  display: block;
-}
-
-.footer {
-  clear: both;
-  background: #000000;
-  text-align: center;
-  padding: 20px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
