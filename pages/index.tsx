@@ -27,32 +27,32 @@ const Home: NextPage = () => {
     return (
         <>
             <Head>
-                <meta charSet="utf-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta charSet="utf-8"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
                 <link rel="icon" href="/favicon.ico"/>
 
                 <title>6b6t</title>
                 <meta name="keywords" content="6b6t, minecraft, cracked, anarchy, server, 6builders6tools"/>
                 <meta name="author" content="AlexProgrammerDE"/>
-                <meta name="description" content={seoDescription} />
+                <meta name="description" content={seoDescription}/>
 
-                <meta name="og:type" content="website" />
-                <meta name="og:url" content={seoUrl} />
-                <meta name="og:title" content={seoTitle} />
-                <meta name="og:url" content={seoUrl} />
-                <meta name="og:description" content={seoDescription} />
-                <meta name="og:image" content={seoImage} />
+                <meta name="og:type" content="website"/>
+                <meta name="og:url" content={seoUrl}/>
+                <meta name="og:title" content={seoTitle}/>
+                <meta name="og:url" content={seoUrl}/>
+                <meta name="og:description" content={seoDescription}/>
+                <meta name="og:image" content={seoImage}/>
 
-                <meta name="theme-color" content={"#3D45CD"} />
-                <meta name="twitter:card" content="summary" />
-                <meta name="twitter:url" content={seoUrl} />
-                <meta name="twitter:title" content={seoTitle} />
-                <meta name="twitter:description" content={seoDescription} />
-                <meta name="twitter:image" content={seoImage} />
-                <meta name="twitter:image:alt" content="6b6t logo" />
+                <meta name="theme-color" content={"#3D45CD"}/>
+                <meta name="twitter:card" content="summary"/>
+                <meta name="twitter:url" content={seoUrl}/>
+                <meta name="twitter:title" content={seoTitle}/>
+                <meta name="twitter:description" content={seoDescription}/>
+                <meta name="twitter:image" content={seoImage}/>
+                <meta name="twitter:image:alt" content="6b6t logo"/>
 
-                <meta name="format-detection" content="telephone=no" />
+                <meta name="format-detection" content="telephone=no"/>
             </Head>
             <Script id="crate" src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3"
                     strategy="lazyOnload"
@@ -86,7 +86,6 @@ const Home: NextPage = () => {
                                     Home
                                 </a>
                             </Link>
-
                         </li>
                     </ul>
                 </div>
