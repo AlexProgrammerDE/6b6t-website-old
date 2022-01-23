@@ -70,12 +70,8 @@ const Home: NextPage = () => {
             <header className="header text-white">
                 <div className="container">
                     <ul className="nav-ul">
-                        <li className="logo">
-                            <Link href="/">
-                                <a>
+                        <li className="logo flex flex-col">
                                     <Image src={logo} alt="logo" height={64} width={64}/>
-                                </a>
-                            </Link>
                         </li>
                         <li className="nav-button">
                             <span className="online">Online: {onlineText}</span>
