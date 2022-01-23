@@ -71,7 +71,11 @@ const Home: NextPage = () => {
                 <div className="container">
                     <ul className="nav-ul">
                         <li className="logo flex flex-col">
+                            <Link href="/">
+                                <a className="flex flex-col">
                                     <Image src={logo} alt="logo" height={64} width={64}/>
+                                </a>
+                            </Link>
                         </li>
                         <li className="nav-button">
                             <span className="online">Online: {onlineText}</span>
