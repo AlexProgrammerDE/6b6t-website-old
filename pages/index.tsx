@@ -72,7 +72,7 @@ const Home: NextPage = () => {
                     `}
             </Script>
             <div className="min-h-screen">
-                <div className="absolute w-full h-full -z-10">
+                <div className="absolute w-screen min-h-screen -z-10">
                     <Image
                         src={Background}
                         layout="fill"
