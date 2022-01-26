@@ -8,7 +8,7 @@
 
 body {
     @apply text-white bg-cover bg-repeat;
-    background-image: url('/background.png');
+    background-image: url('/background.webp');
 }
 
 .nav-ul {
@@ -70,7 +70,7 @@ a:hover {
     content: " ";
 }
 
-.link:-webkit-any-link {
+.article a:-webkit-any-link {
     @apply underline cursor-pointer;
     color: #ADD8E6;
 }
@@ -96,12 +96,16 @@ ol {
     opacity: 0.9;
 }
 
-h2 {
+.article h2 {
     @apply mb-1 font-semibold text-xl;
 }
 
-h3 {
+.article h3 {
     @apply mb-1 font-semibold text-lg;
+}
+
+.article p {
+    @apply mb-1;
 }
 
 .clearfix::after {
