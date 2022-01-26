@@ -1,8 +1,8 @@
 import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import type {AppProps} from 'next/app'
 
-function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+function App({Component, pageProps}: AppProps) {
+    return <Component {...pageProps} />
 }
 
 // noinspection JSUnusedGlobalSymbols

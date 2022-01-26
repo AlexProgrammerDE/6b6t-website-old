@@ -9,7 +9,6 @@ import {useEffect, useState} from "react";
 import Image from 'next/image';
 import logo from '../public/logo.png'
 import Script from 'next/script';
-import Background from '../public/background.png';
 
 const Home: NextPage = () => {
     const [onlineText, setOnlineText] = useState<string>();
@@ -72,14 +71,6 @@ const Home: NextPage = () => {
                     `}
             </Script>
             <div className="min-h-screen">
-                <div className="absolute w-screen min-h-screen -z-10">
-                    <Image
-                        src={Background}
-                        layout="fill"
-                        objectFit="cover"
-                        quality={100}
-                    />
-                </div>
                 <header className="header text-white">
                     <div className="container">
                         <ul className="nav-ul">
@@ -111,7 +102,7 @@ const Home: NextPage = () => {
                 <main className="container clearfix">
                     <div className="content">
                         <article className="article animated slideInUp">
-                            <h2 className="mb-1 font-semibold text-xl">About</h2>
+                            <h2>About</h2>
                             <ul className="mb-2">
                                 <li>IP: 6b6t.org</li>
                                 <li>Versions: 1.8.x to 1.18.x (1.12.2 Recommended)</li>
@@ -124,11 +115,34 @@ const Home: NextPage = () => {
                                 </li>
                             </ul>
 
-                            <h2 className="mb-1 font-semibold text-xl">Discord</h2>
+                            <h2>Discord</h2>
                             <p>
                                 Join the 6b6t.org Official Discord Server to keep up with the latest updates with the
                                 server: <a href="https://dsc.gg/6b6t.org" target="_blank"
+                                           className="link"
                                            rel="noreferrer">https://dsc.gg/6b6t.org</a>
+                            </p>
+
+                            <h2>Popular questions</h2>
+
+                            <h3>What is 6b6t?</h3>
+                            <p>
+                                6b6t is a Minecraft Anarchy Server, that means there are no rules. It's one of the few
+                                cracked (also known as offline mode) anarchy servers which allows everyone to play. The
+                                server is semi-vanilla, it has commands like /tpa, /home and /hat. 6b6t started January
+                                16 2022 and the map will never reset.
+                            </p>
+
+                            <h3>What is 6b6t seed?</h3>
+                            <p>6b6t seed is the same as 2b2t seed: seed</p>
+
+                            <h3>Is hacking allowed?</h3>
+                            <p>Yes, as mentioned above, there are truly no rules.</p>
+
+                            <h3>Are lag machines allowed?</h3>
+                            <p>
+                                Yes, 6b6t admins already patched most of the lag machines and if you help us find a
+                                working one, we will reward you.
                             </p>
                         </article>
                     </div>

@@ -3,99 +3,108 @@
 @tailwind utilities;
 
 * {
-  font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
-  @apply text-white;
+    @apply text-white bg-cover bg-repeat;
+    background-image: url('/background.png');
 }
 
 .nav-ul {
-  @apply list-none m-0 p-0;
+    @apply list-none m-0 p-0;
 }
 
 html {
-  @apply min-h-screen;
+    @apply min-h-screen;
 }
 
 .logo {
-  @apply float-left text-center p-0;
+    @apply float-left text-center p-0;
 }
 
 .nav-button {
-  @apply float-right text-center p-5;
+    @apply float-right text-center p-5;
 }
 
 a.nav {
-  @apply no-underline text-white;
+    @apply no-underline text-white;
 }
 
 a.nav:hover {
-  @apply no-underline;
-  color: #bfbfbf;
+    @apply no-underline;
+    color: #bfbfbf;
 }
 
 a.nav:active {
-  @apply no-underline text-white;
+    @apply no-underline text-white;
 }
 
 button.nav {
-  @apply no-underline text-white font-bold;
+    @apply no-underline text-white font-bold;
 }
 
 button.nav:hover {
-  color: #bfbfbf;
+    color: #bfbfbf;
 }
 
 a {
-  color: #3F47CC;
+    color: #3F47CC;
 }
 
 a:hover {
-  color: #01A2E8;
+    color: #01A2E8;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .header {
-  @apply bg-black font-bold;
+    @apply bg-black font-bold;
 }
 
 .header::after {
-  @apply invisible font-bold block clear-both;
-  content: " ";
+    @apply invisible font-bold block clear-both;
+    content: " ";
 }
 
-a:-webkit-any-link {
-  @apply underline cursor-pointer;
-  color: #ADD8E6;
+.link:-webkit-any-link {
+    @apply underline cursor-pointer;
+    color: #ADD8E6;
 }
 
 ul {
-  @apply list-inside;
-  list-style-type: circle;
+    @apply list-inside;
+    list-style-type: circle;
 }
 
 ol {
-  @apply list-inside;
+    @apply list-inside;
 }
 
 .content {
-  @apply max-w-full;
-  margin-top: 30px;
-  margin-bottom: 30px;
+    @apply max-w-full;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .article {
-  @apply bg-black;
-  padding: 20px;
-  opacity: 0.9;
+    @apply bg-black;
+    padding: 20px;
+    opacity: 0.9;
+}
+
+h2 {
+    @apply mb-1 font-semibold text-xl;
+}
+
+h3 {
+    @apply mb-1 font-semibold text-lg;
 }
 
 .clearfix::after {
-  @apply invisible block clear-both;
-  content: " ";
+    @apply invisible block clear-both;
+    content: " ";
 }
