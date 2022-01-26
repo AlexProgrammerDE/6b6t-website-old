@@ -11,10 +11,6 @@ body {
     background-image: url('/background.webp');
 }
 
-.nav-ul {
-    @apply list-none m-0 p-0;
-}
-
 html {
     @apply min-h-screen;
 }
@@ -24,7 +20,7 @@ html {
 }
 
 .nav-button {
-    @apply float-right text-center p-5;
+    @apply float-right ;
 }
 
 a.nav {
@@ -56,18 +52,12 @@ a:hover {
     color: #01A2E8;
 }
 
+.containerWidth {
+    @apply max-w-screen-xl mx-auto;
+}
+
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.header {
-    @apply bg-black font-bold;
-}
-
-.header::after {
-    @apply invisible font-bold block clear-both;
-    content: " ";
+    @apply max-w-screen-xl mx-auto;
 }
 
 .article a:-webkit-any-link {

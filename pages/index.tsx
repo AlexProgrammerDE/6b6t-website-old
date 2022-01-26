@@ -2,25 +2,10 @@
 
 import type {NextPage} from 'next'
 import Head from 'next/head'
-import Link from 'next/link'
-import {getOnlinePlayers} from "../lib/playercount";
-import {useInterval} from "../lib/utils";
-import {useEffect, useState} from "react";
-import Image from 'next/image';
-import logo from '../public/logo.png'
 import Script from 'next/script';
+import NavBar from "../components/NavBar";
 
 const Home: NextPage = () => {
-    const [onlineText, setOnlineText] = useState<string>();
-
-    useEffect(() => {
-        getOnlinePlayers().then(data => setOnlineText(data));
-    }, [onlineText]);
-
-    useInterval(() => {
-        getOnlinePlayers().then(data => setOnlineText(data));
-    }, 10000);
-
     const seoTitle = '6builders 6tools';
     const seoDescription = '6b6t.org is a Minecraft cracked anarchy server with /tpa and /home. IP: 6b6t.org';
     const seoImage = 'https://6b6t.org/logo.png';
@@ -70,36 +55,9 @@ const Home: NextPage = () => {
                     crate.notify('Click me to chat on the 6b6t discord server!')
                     `}
             </Script>
-            <div className="min-h-screen">
-                <header className="header text-white">
-                    <div className="container">
-                        <ul className="nav-ul">
-                            <li className="logo flex flex-col">
-                                <Link href="/">
-                                    <a className="flex flex-col">
-                                        <Image src={logo} alt="logo" height={64} width={64}/>
-                                    </a>
-                                </Link>
-                            </li>
-                            <li className="nav-button">
-                                <span className="online">Online: {onlineText}</span>
-                            </li>
-                            <li className="nav-button">
-                                <a className="nav" href="https://dsc.gg/6b6t.org">
-                                    Discord
-                                </a>
-                            </li>
-                            <li className="nav-button">
-                                <Link href="/">
-                                    <a className="nav">
-                                        Home
-                                    </a>
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
-                </header>
-                <main className="container clearfix">
+            <div className="min-h-screen h-full flex flex-col">
+                <NavBar/>
+                <main className="flex-grow container clearfix">
                     <div className="content">
                         <article className="article animated slideInUp">
                             <h2>About</h2>
@@ -147,6 +105,13 @@ const Home: NextPage = () => {
                         </article>
                     </div>
                 </main>
+                <footer className="flex-shrink flex flex-row">
+                    <div className="flex flex-col justify-end">
+                        <div className="bg-black p-1.5 text-sm">
+                            <p>Map render by Agent Smith#9660</p>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </>
     )
