@@ -1,3 +1,5 @@
+// noinspection JSUnresolvedLibraryURL
+
 import type {NextPage} from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -7,6 +9,7 @@ import {useEffect, useState} from "react";
 import Image from 'next/image';
 import logo from '../public/logo.png'
 import Script from 'next/script';
+import Background from '../public/background.png';
 
 const Home: NextPage = () => {
     const [onlineText, setOnlineText] = useState<string>();
@@ -33,7 +36,8 @@ const Home: NextPage = () => {
                 <link rel="icon" href="/favicon.ico"/>
 
                 <title>6b6t</title>
-                <meta name="keywords" content="6b6t, minecraft, cracked, anarchy, server, 6builders6tools"/>
+                <meta name="keywords"
+                      content="6b6t, cracked anarchy, 2b2t alternative, anarchy minecraft server, anarchy server like 2b2t"/>
                 <meta name="author" content="AlexProgrammerDE"/>
                 <meta name="description" content={seoDescription}/>
 
@@ -67,55 +71,68 @@ const Home: NextPage = () => {
                     crate.notify('Click me to chat on the 6b6t discord server!')
                     `}
             </Script>
-            <header className="header text-white">
-                <div className="container">
-                    <ul className="nav-ul">
-                        <li className="logo flex flex-col">
-                            <Link href="/">
-                                <a className="flex flex-col">
-                                    <Image src={logo} alt="logo" height={64} width={64}/>
-                                </a>
-                            </Link>
-                        </li>
-                        <li className="nav-button">
-                            <span className="online">Online: {onlineText}</span>
-                        </li>
-                        <li className="nav-button">
-                            <Link href="/">
-                                <a className="nav">
-                                    Home
-                                </a>
-                            </Link>
-                        </li>
-                    </ul>
+            <div className="min-h-screen">
+                <div className="absolute w-full h-full -z-10">
+                    <Image
+                        src={Background}
+                        layout="fill"
+                        objectFit="cover"
+                        quality={100}
+                    />
                 </div>
-            </header>
-
-            <div className="container clearfix">
-                <div className="content">
-                    <article className="article animated slideInUp">
-                        <h1>About:</h1>
-                        <ul>
-                            <li>IP: 6b6t.org</li>
-                            <li>Versions: 1.8.x to 1.18.x (1.12.2 Recommended)</li>
-                            <li>CPU: AMD Ryzen 9 5950X</li>
-                            <li>RAM: 128GB DDR4</li>
-                            <li>STORAGE: 2x2TB NVMe SSD Gen 4.0</li>
-                            <li>DDOS Protection: Path.net</li>
-                            <li>6b6t is a non-vanilla cracked anarchy server with no rules which means everything is
-                                allowed and you can not get punished (No bans or mutes or kicks).
+                <header className="header text-white">
+                    <div className="container">
+                        <ul className="nav-ul">
+                            <li className="logo flex flex-col">
+                                <Link href="/">
+                                    <a className="flex flex-col">
+                                        <Image src={logo} alt="logo" height={64} width={64}/>
+                                    </a>
+                                </Link>
+                            </li>
+                            <li className="nav-button">
+                                <span className="online">Online: {onlineText}</span>
+                            </li>
+                            <li className="nav-button">
+                                <a className="nav" href="https://dsc.gg/6b6t.org">
+                                    Discord
+                                </a>
+                            </li>
+                            <li className="nav-button">
+                                <Link href="/">
+                                    <a className="nav">
+                                        Home
+                                    </a>
+                                </Link>
                             </li>
                         </ul>
-                        <br/>
+                    </div>
+                </header>
+                <main className="container clearfix">
+                    <div className="content">
+                        <article className="article animated slideInUp">
+                            <h2 className="mb-1 font-semibold text-xl">About</h2>
+                            <ul className="mb-2">
+                                <li>IP: 6b6t.org</li>
+                                <li>Versions: 1.8.x to 1.18.x (1.12.2 Recommended)</li>
+                                <li>CPU: AMD Ryzen 9 5950X</li>
+                                <li>RAM: 128GB DDR4</li>
+                                <li>STORAGE: 2x2TB NVMe SSD Gen 4.0</li>
+                                <li>DDOS Protection: Path.net</li>
+                                <li>6b6t is a non-vanilla cracked anarchy server with no rules which means everything is
+                                    allowed and you can not get punished (No bans or mutes or kicks).
+                                </li>
+                            </ul>
 
-                        <h1>Discord:</h1>
-                        <p>
-                            Join the 6b6t.org Official Discord Server to keep up with the latest updates with the
-                            server: <a href="https://dsc.gg/6b6t.org" target="_blank"
-                                       rel="noreferrer">https://dsc.gg/6b6t.org</a>
-                        </p>
-                    </article>
-                </div>
+                            <h2 className="mb-1 font-semibold text-xl">Discord</h2>
+                            <p>
+                                Join the 6b6t.org Official Discord Server to keep up with the latest updates with the
+                                server: <a href="https://dsc.gg/6b6t.org" target="_blank"
+                                           rel="noreferrer">https://dsc.gg/6b6t.org</a>
+                            </p>
+                        </article>
+                    </div>
+                </main>
             </div>
         </>
     )
