@@ -127,14 +127,14 @@ const Home: NextPage = () => {
 
                             <h3>What is 6b6t?</h3>
                             <p>
-                                6b6t is a Minecraft Anarchy Server, that means there are no rules. It's one of the few
+                                6b6t is a Minecraft Anarchy Server, that means there are no rules. It&apos;s one of the few
                                 cracked (also known as offline mode) anarchy servers which allows everyone to play. The
                                 server is semi-vanilla, it has commands like /tpa, /home and /hat. 6b6t started January
                                 16 2022 and the map will never reset.
                             </p>
 
                             <h3>What is 6b6t seed?</h3>
-                            <p>6b6t seed is the same as 2b2t seed: seed</p>
+                            <p>6b6t seed is the same as 2b2t seed: -4172144997902289642</p>
 
                             <h3>Is hacking allowed?</h3>
                             <p>Yes, as mentioned above, there are truly no rules.</p>
