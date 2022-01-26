@@ -74,7 +74,7 @@ const Home: NextPage = () => {
                             </ul>
 
                             <h2>Discord</h2>
-                            <p>
+                            <p className="pb-2">
                                 Join the 6b6t.org Official Discord Server to keep up with the latest updates with the
                                 server: <a href="https://dsc.gg/6b6t.org" target="_blank"
                                            className="link"
