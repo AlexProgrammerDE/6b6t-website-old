@@ -14,12 +14,12 @@ const Home: NextPage = () => {
     return (
         <>
             <Head>
+                <title>6b6t</title>
+                <link rel="icon" href="/favicon.ico"/>
+
                 <meta charSet="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-                <link rel="icon" href="/favicon.ico"/>
-
-                <title>6b6t</title>
                 <meta name="keywords"
                       content="6b6t, cracked anarchy, 2b2t alternative, anarchy minecraft server, anarchy server like 2b2t"/>
                 <meta name="author" content="AlexProgrammerDE"/>
