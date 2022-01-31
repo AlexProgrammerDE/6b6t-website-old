@@ -14,7 +14,7 @@ const Home: NextPage = () => {
     return (
         <>
             <Head>
-                <title>6b6t</title>
+                <title>{seoTitle}</title>
                 <link rel="icon" href="/favicon.ico"/>
 
                 <meta charSet="utf-8"/>

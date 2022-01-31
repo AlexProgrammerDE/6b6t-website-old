@@ -35,22 +35,28 @@ const NavBar: NextPage = () => {
                                 open ?
                                     <path fillRule="evenodd"
                                           d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                          clipRule="evenodd" />
+                                          clipRule="evenodd"/>
                                     :
                                     <path fillRule="evenodd"
                                           d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                                          clipRule="evenodd" />
+                                          clipRule="evenodd"/>
                             }
                         </svg>
                     </button>
                 </div>
-                <nav className={`${open ? "flex" : "hidden"} flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-end md:flex-row`}>
+                <nav
+                    className={`${open ? "flex" : "hidden"} font-bold flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-end md:flex-row`}>
                     <div className="text-center p-1 md:p-5">
                         <Link href="/">
                             <a className="nav">
                                 Home
                             </a>
                         </Link>
+                    </div>
+                    <div className="text-center p-1 md:p-5">
+                        <a className="nav" href="https://track.6b6t.org">
+                            Track
+                        </a>
                     </div>
                     <div className="text-center p-1 md:p-5">
                         <a className="nav" href="https://dsc.gg/6b6t.org">
