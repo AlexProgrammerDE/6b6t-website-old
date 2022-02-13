@@ -1433,10 +1433,10 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-next-sitemap@2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-2.1.2.tgz#5cf780911e022ba588ea02f41b8a350d34df99f1"
-  integrity sha512-COgBjcrs0zqdjZLPQCb1ZBHbv8TBUsoBP/I9YPbW0nqVz28SfR5Wy5t4htQudfA2uD5OVPFw0UH7sZjYWGqMug==
+next-sitemap@2.1.14:
+  version "2.1.14"
+  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-2.1.14.tgz#d800a85c2d045dfdfe8982c8fdb3304087950515"
+  integrity sha512-7IqZjCGYSoA7csSc7B3m3m7hlFYd7Csg2PrNX97wH6/yJZ58nXiBR2JYQhHOZE3CzP3BAUKxwhiv2SlDiRzNXA==
   dependencies:
     "@corex/deepmerge" "^2.6.148"
     minimist "^1.2.5"
