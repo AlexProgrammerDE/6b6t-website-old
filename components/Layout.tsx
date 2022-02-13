@@ -70,6 +70,7 @@ export default function Layout({children}: {children: ReactNode}) {
                     </div>
                 </footer>
                 <CookieConsent
+                    containerClasses="pr-24"
                     enableDeclineButton
                     onAccept={handleAcceptCookie}
                     onDecline={handleDeclineCookie}
