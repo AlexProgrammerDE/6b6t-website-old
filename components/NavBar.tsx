@@ -54,8 +54,20 @@ const NavBar: NextPage = () => {
                         </Link>
                     </div>
                     <div className="text-center p-1 md:p-5">
+                        <Link href="/commands">
+                            <a className="nav">
+                                Commands
+                            </a>
+                        </Link>
+                    </div>
+                    <div className="text-center p-1 md:p-5">
                         <a className="nav" href="https://track.6b6t.org">
                             Track
+                        </a>
+                    </div>
+                    <div className="text-center p-1 md:p-5">
+                        <a className="nav" href="https://spawn.6b6t.org">
+                            Spawn
                         </a>
                     </div>
                     <div className="text-center p-1 md:p-5">
