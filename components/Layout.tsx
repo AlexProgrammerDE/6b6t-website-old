@@ -3,9 +3,40 @@
 import Script from "next/script";
 import NavBar from "./NavBar";
 import SEOHeader from "./SEOHeader";
-import {ReactNode} from "react";
+import {ReactNode, useEffect} from "react";
+import CookieConsent, {
+    getCookieConsentValue,
+    Cookies,
+} from "react-cookie-consent";
+import * as ReactGA from "react-ga";
+
+const initGA = (id: string) => {
+    if (process.env.VERCEL_ENV === "production") {
+        ReactGA.initialize(id);
+    }
+};
 
 export default function Layout({children}: {children: ReactNode}) {
+    useEffect(() => {
+        const isConsent = getCookieConsentValue();
+        if (isConsent === "true") {
+            handleAcceptCookie();
+        }
+    }, []);
+
+    const handleDeclineCookie = () => {
+        //remove Google Analytics cookies
+        Cookies.remove("_ga");
+        Cookies.remove("_gat");
+        Cookies.remove("_gid");
+    };
+
+    const handleAcceptCookie = () => {
+        if (process.env.REACT_APP_GOOGLE_ANALYTICS_ID) {
+            initGA(process.env.REACT_APP_GOOGLE_ANALYTICS_ID);
+        }
+    };
+
     return (
         <>
             <SEOHeader/>
@@ -38,6 +69,13 @@ export default function Layout({children}: {children: ReactNode}) {
                         </div>
                     </div>
                 </footer>
+                <CookieConsent
+                    enableDeclineButton
+                    onAccept={handleAcceptCookie}
+                    onDecline={handleDeclineCookie}
+                >
+                    This website uses cookies to enhance the user experience.
+                </CookieConsent>
             </div>
         </>
     )
