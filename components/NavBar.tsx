@@ -75,7 +75,7 @@ const NavBar: NextPage = () => {
                             Discord
                         </a>
                     </div>
-                    <div className="text-center p-1 pb-0 md:p-5 md:flex-shrink-0">
+                    <div className="text-center p-1 pb-0 md:p-5 md:flex-shrink-0 w-50">
                         Online: {onlineText}
                     </div>
                 </nav>
