@@ -1,22 +1,35 @@
-// noinspection JSUnresolvedLibraryURL
-
-import Script from "next/script";
 import NavBar from "./NavBar";
 import SEOHeader from "./SEOHeader";
-import {ReactNode, useEffect} from "react";
-import CookieConsent, {
-    getCookieConsentValue,
-    Cookies,
-} from "react-cookie-consent";
+import {ReactNode, useEffect, useState} from "react";
+import CookieConsent, {Cookies, getCookieConsentValue,} from "react-cookie-consent";
 import * as ReactGA from "react-ga";
 
 const initGA = (id: string) => {
-    if (process.env.VERCEL_ENV === "production") {
-        ReactGA.initialize(id);
-    }
+    ReactGA.initialize(id);
 };
 
-export default function Layout({children}: {children: ReactNode}) {
+export default function Layout({children}: { children: ReactNode }) {
+    const [crate, setCrate] = useState<any>()
+
+    useEffect(() => {
+        if (crate) return
+
+        import("@widgetbot/crate").then((importContent) => {
+            importContent.cdn().then(crateCDN => {
+                const crateInstance = new crateCDN({
+                    server: '917520262797344779',
+                    channel: '917520263384563717',
+                    color: '#000',
+                    location: ['bottom', 'right']
+                })
+
+                crateInstance.notify('Click me to chat on the 6b6t discord server!')
+
+                setCrate(crateInstance)
+            })
+        })
+    }, [crate])
+
     useEffect(() => {
         const isConsent = getCookieConsentValue();
         if (isConsent === "true") {
@@ -25,34 +38,21 @@ export default function Layout({children}: {children: ReactNode}) {
     }, []);
 
     const handleDeclineCookie = () => {
-        //remove Google Analytics cookies
+        // Remove Google Analytics cookies
         Cookies.remove("_ga");
         Cookies.remove("_gat");
         Cookies.remove("_gid");
     };
 
     const handleAcceptCookie = () => {
-        if (process.env.REACT_APP_GOOGLE_ANALYTICS_ID) {
-            initGA(process.env.REACT_APP_GOOGLE_ANALYTICS_ID);
+        if (process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID) {
+            initGA(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID);
         }
     };
 
     return (
         <>
             <SEOHeader/>
-            <Script id="crate" src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3"
-                    strategy="lazyOnload"
-            >
-                {`
-                    const crate = new Crate({
-                                server: '917520262797344779',
-                                channel: '917520263384563717',
-                                color: '#000',
-                                location: ['bottom', 'right']
-                            })
-                    crate.notify('Click me to chat on the 6b6t discord server!')
-                    `}
-            </Script>
             <div className="min-h-screen h-full flex flex-col">
                 <NavBar/>
                 <main className="flex-grow container clearfix">
