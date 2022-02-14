@@ -2,10 +2,27 @@ import NavBar from "./NavBar";
 import SEOHeader from "./SEOHeader";
 import {ReactNode, useEffect, useState} from "react";
 import CookieConsent, {Cookies, getCookieConsentValue,} from "react-cookie-consent";
-import * as ReactGA from "react-ga";
+import * as gtagScript from '../lib/gtag'
+import Script from "next/script";
+
+interface WindowLayer {
+    dataLayer: IArguments[]
+}
 
 const initGA = (id: string) => {
-    ReactGA.initialize(id);
+    const specialWindow: WindowLayer = window as unknown as WindowLayer
+    specialWindow.dataLayer = specialWindow.dataLayer || [];
+    const gtag: Gtag.Gtag = function gtag() {
+        specialWindow.dataLayer.push(arguments);
+    }
+    gtag('consent', 'update', {
+        'ad_storage': 'granted',
+        'analytics_storage': 'granted'
+    });
+    gtag('js', new Date());
+    gtag('config', id, {
+        page_path: window.location.pathname,
+    });
 };
 
 export default function Layout({children}: { children: ReactNode }) {
@@ -52,6 +69,10 @@ export default function Layout({children}: { children: ReactNode }) {
 
     return (
         <>
+            <Script
+                strategy="lazyOnload"
+                src={`https://www.googletagmanager.com/gtag/js?id=${gtagScript.GA_TRACKING_ID}`}
+            />
             <SEOHeader/>
             <div className="min-h-screen h-full flex flex-col">
                 <NavBar/>

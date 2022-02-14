@@ -5,7 +5,7 @@ export default function SEOHeader() {
     const seoDescription = '6b6t.org is a Minecraft cracked anarchy server with /tpa and /home. IP: 6b6t.org';
     const seoImage = 'https://6b6t.org/logo.png';
     const seoUrl = 'https://6b6t.org';
-        
+
     return (
         <Head>
             <title>{seoTitle}</title>

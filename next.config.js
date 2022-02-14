@@ -17,7 +17,7 @@ const securityHeaders = [
     },
     {
         key: 'Content-Security-Policy',
-        value: "default-src 'self'; script-src 'self' https://cdn.jsdelivr.net/npm/@widgetbot/crate@3 https://www.google-analytics.com/analytics.js 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'self'; connect-src 'self' https://api.mcsrvstat.us https://vitals.vercel-insights.com; font-src 'self'; frame-src 'self' https://e.widgetbot.io; img-src 'self' https://cdn.discordapp.com data:; manifest-src 'self'; media-src 'self'; worker-src 'none';"
+        value: "default-src 'self'; script-src 'self' https://cdn.jsdelivr.net/npm/@widgetbot/crate@3 https://www.googletagmanager.com https://www.google-analytics.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'self'; connect-src 'self' https://api.mcsrvstat.us https://vitals.vercel-insights.com https://www.google-analytics.com; font-src 'self'; frame-src 'self' https://e.widgetbot.io; img-src 'self' https://cdn.discordapp.com https://www.google-analytics.com data:; manifest-src 'self'; media-src 'self'; worker-src 'none';"
     }
 ]
 
