@@ -3,24 +3,22 @@ import SEOHeader from "./SEOHeader";
 import {ReactNode, useEffect, useState} from "react";
 import CookieConsent, {Cookies, getCookieConsentValue,} from "react-cookie-consent";
 import * as gtagScript from '../lib/gtag'
-import Script from "next/script";
+import {WindowLayer} from "../lib/gtag";
 
-interface WindowLayer {
-    dataLayer: IArguments[]
-}
+const initGA = () => {
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${gtagScript.GA_TRACKING_ID}`;
+    document.body.appendChild(script);
 
-const initGA = (id: string) => {
     const specialWindow: WindowLayer = window as unknown as WindowLayer
     specialWindow.dataLayer = specialWindow.dataLayer || [];
-    const gtag: Gtag.Gtag = function gtag() {
+    const gtagType: Gtag.Gtag = function gtag() {
         specialWindow.dataLayer.push(arguments);
     }
-    gtag('consent', 'update', {
-        'ad_storage': 'granted',
-        'analytics_storage': 'granted'
-    });
-    gtag('js', new Date());
-    gtag('config', id, {
+    window.gtag = gtagType
+    gtagType('js', new Date());
+    gtagType('config', gtagScript.GA_TRACKING_ID, {
         page_path: window.location.pathname,
     });
 };
@@ -62,17 +60,11 @@ export default function Layout({children}: { children: ReactNode }) {
     };
 
     const handleAcceptCookie = () => {
-        if (process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID) {
-            initGA(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID);
-        }
+        initGA()
     };
 
     return (
         <>
-            <Script
-                strategy="lazyOnload"
-                src={`https://www.googletagmanager.com/gtag/js?id=${gtagScript.GA_TRACKING_ID}`}
-            />
             <SEOHeader/>
             <div className="min-h-screen h-full flex flex-col">
                 <NavBar/>
