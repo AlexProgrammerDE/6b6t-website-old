@@ -154,6 +154,13 @@ export var commands: Categories[] = [
                 name: '/skin <premium player name>',
                 description: 'change your skin'
             },
+            {
+                name: '/nick',
+                description: 'change your nickname and the color of it',
+                limited: {
+                    name: '[Donator+ and VIP]'
+                }
+            },
         ]
     }
 ]
