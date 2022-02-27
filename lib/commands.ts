@@ -45,7 +45,7 @@ export var commands: Categories[] = [
                 name: '/tptoggle',
                 description: 'prevent anyone from sending teleportation requests to you',
                 limited: {
-                    name: '[Donator+ and VIP]'
+                    name: '[VIP+ and MIP]'
                 }
             },
             {
@@ -102,7 +102,7 @@ export var commands: Categories[] = [
                 name: '/ping <player name>',
                 description: 'check yours or players ping in milliseconds',
                 limited: {
-                    name: '[Donator+ and VIP]'
+                    name: '[VIP+ and MIP]'
                 }
             },
             {
@@ -147,12 +147,19 @@ export var commands: Categories[] = [
                 name: '/hat',
                 description: 'put an item on your head',
                 limited: {
-                    name: '[Voter, Donator, Donator+ and VIP]'
+                    name: '[Voter, VIP, VIP+ and MIP]'
                 }
             },
             {
                 name: '/skin <premium player name>',
                 description: 'change your skin'
+            },
+            {
+                name: '/nick',
+                description: 'change your nickname and the color of it',
+                limited: {
+                    name: '[VIP+ and MIP]'
+                }
             },
         ]
     }
