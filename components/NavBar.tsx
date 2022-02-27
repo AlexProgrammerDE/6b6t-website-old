@@ -3,24 +3,24 @@ import Link from "next/link";
 import {useEffect, useState} from "react";
 import Image from "next/image";
 import logo from "../public/logo.png";
-import {getOnlinePlayers} from "../lib/playercount";
 import {useInterval} from "../lib/utils";
+import {getOnlinePlayers} from "../lib/playercount";
 
 const NavBar: NextPage = () => {
     const [open, setOpen] = useState(false);
-    const [onlineText, setOnlineText] = useState<string>();
+    const [onlineText, setOnlineText] = useState<string>('Online: / ');
 
     useEffect(() => {
-        getOnlinePlayers().then(data => setOnlineText(data));
+        getOnlinePlayers().then(data => setOnlineText(`Online: ${data}`));
     }, [onlineText]);
 
     useInterval(() => {
-        getOnlinePlayers().then(data => setOnlineText(data));
+        getOnlinePlayers().then(data => setOnlineText(`Online: ${data}`));
     }, 10000);
 
     return (
         <header className="header text-white bg-black">
-            <div className="containerWidth flex flex-col md:items-center md:justify-between md:flex-row">
+            <div className="containerWidth flex flex-col lg:items-center lg:justify-between lg:flex-row">
                 <div className="flex flex-row items-center justify-between w-full">
                     <Link href="/">
                         <a className="flex flex-col">
@@ -28,7 +28,7 @@ const NavBar: NextPage = () => {
                         </a>
                     </Link>
                     <button aria-label="Expand navigation bar"
-                            className="justify-self-end md:hidden rounded-lg focus:outline-none focus:shadow-outline mr-8"
+                            className="justify-self-end lg:hidden rounded-lg focus:outline-none focus:shadow-outline mr-8"
                             onClick={() => setOpen(!open)}>
                         <svg fill="currentColor" viewBox="0 0 20 20" className="w-6 h-6">
                             {
@@ -45,38 +45,43 @@ const NavBar: NextPage = () => {
                     </button>
                 </div>
                 <nav
-                    className={`${open ? "flex" : "hidden"} font-bold flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-end md:flex-row`}>
-                    <div className="text-center p-1 md:p-5">
+                    className={`${open ? "flex" : "hidden"} font-bold flex-col flex-grow pb-4 lg:pb-0 lg:flex lg:justify-end lg:flex-row`}>
+                    <div className="text-center p-1 lg:p-5">
                         <Link href="/">
                             <a className="nav">
                                 Home
                             </a>
                         </Link>
                     </div>
-                    <div className="text-center p-1 md:p-5">
+                    <div className="text-center p-1 lg:p-5">
                         <Link href="/commands">
                             <a className="nav">
                                 Commands
                             </a>
                         </Link>
                     </div>
-                    <div className="text-center p-1 md:p-5">
+                    <div className="text-center p-1 lg:p-5">
+                        <a className="nav" href="https://donate-6b6t.tebex.io">
+                            Donate
+                        </a>
+                    </div>
+                    <div className="text-center p-1 lg:p-5">
                         <a className="nav" href="https://track.6b6t.org">
                             Track
                         </a>
                     </div>
-                    <div className="text-center p-1 md:p-5">
+                    <div className="text-center p-1 lg:p-5">
                         <a className="nav" href="https://spawn.6b6t.org">
                             Spawn
                         </a>
                     </div>
-                    <div className="text-center p-1 md:p-5">
+                    <div className="text-center p-1 lg:p-5">
                         <a className="nav" href="https://dsc.gg/6b6t.org">
                             Discord
                         </a>
                     </div>
-                    <div className="text-center p-1 pb-0 md:p-5 md:flex-shrink-0 w-50">
-                        Online: {onlineText}
+                    <div className="text-center p-1 pb-0 lg:p-5 lg:flex-shrink-0 lg:w-52">
+                        {onlineText}
                     </div>
                 </nav>
             </div>
