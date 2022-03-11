@@ -261,14 +261,14 @@
   resolved "https://registry.npmjs.org/@types/color-name/-/color-name-1.1.1.tgz"
   integrity sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
 
-"@types/color@^3.0.3":
+"@types/color@3.0.3":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@types/color/-/color-3.0.3.tgz#e6d8d72b7aaef4bb9fe80847c26c7c786191016d"
   integrity sha512-X//qzJ3d3Zj82J9sC/C18ZY5f43utPbAJ6PhYt/M7uG6etcF6MRpKdN880KBy43B0BMzSfeT96MzrsNjFI3GbA==
   dependencies:
     "@types/color-convert" "*"
 
-"@types/gtag.js@^0.0.8":
+"@types/gtag.js@0.0.8":
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/@types/gtag.js/-/gtag.js-0.0.8.tgz#43035ab23a06b3bd0b23968c5c4ef000c597ad8a"
   integrity sha512-xKDygydxruSUNkVbZWjiEbMijz9+xZCLb2yiTiQT88pm5EhIAUhaCo05IZF1HcQc90u4W7cp+7OZNpcJxpyL5g==
@@ -386,9 +386,9 @@
     "@typescript-eslint/types" "5.11.0"
     eslint-visitor-keys "^3.0.0"
 
-"@widgetbot/crate@^3.3.0":
+"@widgetbot/crate@3.3.0":
   version "3.3.0"
-  resolved "https://registry.npmjs.org/@widgetbot/crate/-/crate-3.3.0.tgz"
+  resolved "https://registry.yarnpkg.com/@widgetbot/crate/-/crate-3.3.0.tgz#ded4736f95b4c6dc2c22e5a405bd21a874df3f5d"
   integrity sha512-An/fA0Vf7WD9JHVW+T8xGoTD1Im6VeQWDYcC+6nXdS7/LaZMdNVNJzCd6tpULY0Qx7+8tibNHmn4z44KKvahOQ==
   dependencies:
     "@emotion/stylis" "^0.6.10"
