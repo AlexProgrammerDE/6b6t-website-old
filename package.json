@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@headlessui/react": "1.4.3",
-    "@heroicons/react": "1.0.5",
+    "@heroicons/react": "1.0.6",
     "@widgetbot/crate": "3.3.0",
     "ajax": "0.0.4",
     "axios": "0.26.1",
