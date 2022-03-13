@@ -1,3 +1,3 @@
-# 6b6t-website-new
+# 6b6t-website
 
-The new 6b6t website rewrite.
+The new 6b6t.org website rewrite.
