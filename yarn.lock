@@ -400,14 +400,14 @@
     "@typescript-eslint/types" "5.10.1"
     eslint-visitor-keys "^3.0.0"
 
-"@widgetbot/crate@3.3.0":
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/@widgetbot/crate/-/crate-3.3.0.tgz#ded4736f95b4c6dc2c22e5a405bd21a874df3f5d"
-  integrity sha512-An/fA0Vf7WD9JHVW+T8xGoTD1Im6VeQWDYcC+6nXdS7/LaZMdNVNJzCd6tpULY0Qx7+8tibNHmn4z44KKvahOQ==
+"@widgetbot/crate@3.3.2":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@widgetbot/crate/-/crate-3.3.2.tgz#971c3f309d12572bc7a381d66cfd6baaef92bb99"
+  integrity sha512-jJxzrEUKe0avpRIzCqVfklHwsxPFamz5xXElxogm7/fpyjeuQrtFHavbpDq7pl1cO8+PH5BDBg5xsPpQfjGJYQ==
   dependencies:
     "@emotion/stylis" "^0.6.10"
     "@widgetbot/embed-api" "^1.1.3"
-    "@widgetbot/react-embed" "^1.4.0"
+    "@widgetbot/react-embed" "^1.4.1"
     color "^3.0.0"
     create-emotion "^9.2.4"
     create-emotion-styled "^9.2.3"
@@ -430,10 +430,10 @@
   resolved "https://registry.npmjs.org/@widgetbot/embed-api/-/embed-api-1.1.3.tgz"
   integrity sha1-x/2AadfOLsd0DYv0FAx4bGNvs9Y=
 
-"@widgetbot/react-embed@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.npmjs.org/@widgetbot/react-embed/-/react-embed-1.4.0.tgz"
-  integrity sha512-rN/zyv8ndn+I3g1fCMql2NN+2Yn04XVhwL1GHQlSKEvFWNXsqEDyXO1MaDxcvJFcG7cSQLRTcvgVWzAVe+3Fag==
+"@widgetbot/react-embed@^1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@widgetbot/react-embed/-/react-embed-1.4.1.tgz#c18e10e47f12f2c6f3ceb3c55c9ceb2f99ec011b"
+  integrity sha512-bRZ2f1B/nLX8RZDA09f6l9Ft89Gm6szizyvjftYP46k1g+SnIyYQCYUFxlZmVEOYggzoRKOLZcElZzv00WDfHQ==
   dependencies:
     "@widgetbot/embed-api" "^1.1.3"
     react "^16.13.1"
