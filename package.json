@@ -14,7 +14,7 @@
     "@heroicons/react": "1.0.6",
     "@widgetbot/crate": "3.3.2",
     "ajax": "0.0.4",
-    "axios": "0.27.0",
+    "axios": "0.27.1",
     "next": "12.1.5",
     "next-sitemap": "2.5.20",
     "prop-types": "15.8.1",
