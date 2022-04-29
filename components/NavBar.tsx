@@ -61,7 +61,7 @@ const NavBar: NextPage = () => {
                         </Link>
                     </div>
                     <div className="text-center p-1 lg:p-5">
-                        <a className="nav" href="https://donate-6b6t.tebex.io">
+                        <a className="nav" href="https://store-6b6t.tebex.io">
                             Donate
                         </a>
                     </div>
