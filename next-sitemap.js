@@ -1,4 +1,4 @@
 module.exports = {
-    siteUrl: "https://6b6t.org",
+    siteUrl: "https://www.6b6t.org",
     generateRobotsTxt: true
 };

@@ -3,8 +3,8 @@ import Head from "next/head";
 export default function SEOHeader() {
     const seoTitle = '6builders 6tools';
     const seoDescription = '6b6t.org is a Minecraft cracked anarchy server with /tpa and /home. IP: 6b6t.org';
-    const seoImage = 'https://6b6t.org/logo.png';
-    const seoUrl = 'https://6b6t.org';
+    const seoImage = 'https://www.6b6t.org/logo.png';
+    const seoUrl = 'https://www.6b6t.org';
 
     return (
         <Head>
