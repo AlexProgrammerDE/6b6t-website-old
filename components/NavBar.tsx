@@ -71,11 +71,6 @@ const NavBar: NextPage = () => {
                         </a>
                     </div>
                     <div className="text-center p-1 lg:p-5">
-                        <a className="nav" href="https://spawn.6b6t.org">
-                            Spawn
-                        </a>
-                    </div>
-                    <div className="text-center p-1 lg:p-5">
                         <a className="nav" href="https://dsc.gg/6b6t.org">
                             Discord
                         </a>
