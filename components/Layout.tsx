@@ -33,7 +33,7 @@ export default function Layout({children}: { children: ReactNode }) {
             importContent.cdn().then(crateCDN => {
                 const crateInstance = new crateCDN({
                     server: '917520262797344779',
-                    channel: '917520263384563717',
+                    channel: '921485027169148929',
                     color: '#000',
                     location: ['bottom', 'right']
                 })
