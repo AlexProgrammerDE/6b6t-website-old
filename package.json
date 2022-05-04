@@ -15,6 +15,7 @@
     "@widgetbot/crate": "3.3.2",
     "ajax": "0.0.4",
     "axios": "0.27.2",
+    "daisyui": "^2.14.3",
     "next": "12.1.5",
     "next-sitemap": "2.5.20",
     "prop-types": "15.8.1",
