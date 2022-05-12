@@ -12,7 +12,7 @@
   "dependencies": {
     "@headlessui/react": "1.6.1",
     "@heroicons/react": "1.0.6",
-    "@widgetbot/crate": "3.3.2",
+    "@widgetbot/crate": "3.3.3",
     "ajax": "0.0.4",
     "axios": "0.27.2",
     "daisyui": "2.14.3",
