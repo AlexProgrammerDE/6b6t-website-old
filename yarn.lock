@@ -53,10 +53,10 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
 
-"@corex/deepmerge@^2.6.148":
-  version "2.6.148"
-  resolved "https://registry.npmjs.org/@corex/deepmerge/-/deepmerge-2.6.148.tgz"
-  integrity sha512-6QMz0/2h5C3ua51iAnXMPWFbb1QOU1UvSM4bKBw5mzdT+WtLgjbETBBIQZ+Sh9WvEcGwlAt/DEdRpIC3XlDBMA==
+"@corex/deepmerge@^4.0.26":
+  version "4.0.26"
+  resolved "https://registry.yarnpkg.com/@corex/deepmerge/-/deepmerge-4.0.26.tgz#5ebd60608e5050a336f3163e68ac58152963a3aa"
+  integrity sha512-Tp0u2/h45uWbZhsjazK9W6WwwTVBqCIY+1qJHfy6QWN0qUw6vCWLnJhB+Gg9dpQZ26q3ygd6aj49DtXUDq56JQ==
 
 "@emotion/babel-utils@^0.6.4":
   version "0.6.10"
@@ -924,10 +924,10 @@ csstype@^3.0.2, csstype@^3.0.6:
   resolved "https://registry.npmjs.org/csstype/-/csstype-3.0.10.tgz"
   integrity sha512-2u44ZG2OcNUO9HDp/Jl8C07x6pU/eTR3ncV91SiK3dhG9TWvRVsCoJw14Ckx5DgWkzGA3waZWO3d7pgqpUI/XA==
 
-daisyui@2.15.4:
-  version "2.15.4"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-2.15.4.tgz#775822bef77b6bb81f36b1bbb1909a52f0464987"
-  integrity sha512-bHO/ETG+N6i722jO6xup6AYh0KgigirOYIfY35lJzVDd85h6CXEWj//DhcF2HFVCF2N/zdh+lhK/mPc95v7Sig==
+daisyui@2.17.0:
+  version "2.17.0"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-2.17.0.tgz#4a1016cf5e0d32ee4dec1139f600b06bfd185ceb"
+  integrity sha512-U8eA8IvwH0JSi72WbRZdmJcYZek3ERMPFPAVFhnYc6dGnobeIHLGBz8J4q012I9YVDUqXFrWz13rpn+SBdn7qQ==
   dependencies:
     color "^4.2"
     css-selector-tokenizer "^0.8.0"
@@ -2130,12 +2130,12 @@ natural-compare@^1.4.0:
   resolved "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-next-sitemap@2.5.28:
-  version "2.5.28"
-  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-2.5.28.tgz#c061914edcc74268e43254710dec0a0febae5fa4"
-  integrity sha512-rDMTa7nLE0ikYnu8JDCrwQufIRm4b4Sg8BK11DGdDAmYpXmcmw4Qvm+oVBR8gUL97E6i2ihTM+cRx8mgENDACA==
+next-sitemap@3.1.6:
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-3.1.6.tgz#34586f5a788bae013893836142c726c2cb1ae04c"
+  integrity sha512-XQ1WQuW5/tkgkqxKhW898nvnuGghLK/raCsP0CkBTuB/Zyl3abF06jzkWQ0747ubWSCyDHdB9nP3SZdyMW0uIw==
   dependencies:
-    "@corex/deepmerge" "^2.6.148"
+    "@corex/deepmerge" "^4.0.26"
     minimist "^1.2.6"
 
 next@12.1.6:
